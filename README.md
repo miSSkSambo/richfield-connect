@@ -1,11 +1,5 @@
 # Richfield Connect
 
-**Student name:** kabelo sambo 
-
-**Student number:** 402502216
-
-**Module:** Web Technology 512
-
 **Assignment title:** Richfield Connect — React Single-Page Academic Social Engagement Platform
 
 ## Description
