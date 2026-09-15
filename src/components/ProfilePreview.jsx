@@ -1,0 +1,4 @@
+export default function ProfilePreview({ form }) {
+  const initials = form.fullName ? form.fullName.split(' ').map((part) => part[0]).join('').slice(0, 2).toUpperCase() : 'RC';
+  return <aside className="preview-panel"><div className="preview-top"><span className="eyebrow">LIVE PREVIEW</span><span className="live-indicator">● Live</span></div><div className="preview-avatar">{initials}</div><h2>{form.fullName || 'Your name here'}</h2><p className="preview-campus">{form.campus || 'Select your campus'}</p><div className="preview-rule" /><p className="preview-bio">{form.bio || 'Your short bio will appear here as you write it.'}</p><div className="tag-list">{form.interests.length ? form.interests.map((interest) => <span className="tag" key={interest}>{interest}</span>) : <span className="tag tag-muted">Your interests</span>}</div><div className="preview-footer">Your profile is visible to the Richfield Connect community.</div></aside>;
+}
